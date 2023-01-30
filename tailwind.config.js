@@ -6,9 +6,9 @@ module.exports = {
       colors: {
         primary: '#FF5678',
         secondary: '#020E35',
+        tertiary: '#FFEEF6',
       },
     },
-
     fontFamily: {
       sans: 'Merriweather',
     },
