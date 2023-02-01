@@ -552,6 +552,14 @@ html {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .-mx-4 {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -567,10 +575,6 @@ html {
 
 .mb-\[6px\] {
   margin-bottom: 6px;
-}
-
-.-mt-4 {
-  margin-top: -1rem;
 }
 
 .block {
@@ -609,16 +613,12 @@ html {
   height: 250px;
 }
 
-.h-\[2px\] {
-  height: 2px;
-}
-
 .h-\[286px\] {
   height: 286px;
 }
 
-.min-h-\[\] {
-  min-height: ;
+.h-\[524px\] {
+  height: 524px;
 }
 
 .min-h-\[70px\] {
@@ -645,20 +645,8 @@ html {
   width: 292px;
 }
 
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-3 {
-  width: 0.75rem;
+.w-\[609px\] {
+  width: 609px;
 }
 
 .w-32 {
@@ -758,10 +746,6 @@ html {
   gap: 1.25rem;
 }
 
-.gap-\[\] {
-  gap: ;
-}
-
 .gap-\[119px\] {
   gap: 119px;
 }
@@ -770,8 +754,12 @@ html {
   align-self: stretch;
 }
 
-.scroll-smooth {
-  scroll-behavior: smooth;
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-\[200px\] {
@@ -900,26 +888,6 @@ html {
   padding-bottom: 2.5rem;
 }
 
-.px-\[\] {
-  padding-left: ;
-  padding-right: ;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .pb-9 {
   padding-bottom: 2.25rem;
 }
@@ -930,14 +898,6 @@ html {
 
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
-}
-
-.pt-\[\] {
-  padding-top: ;
 }
 
 .pt-\[100px\] {
@@ -1016,11 +976,6 @@ html {
 
 .text-transparent {
   color: transparent;
-}
-
-.text-gray-50 {
-  --tw-text-opacity: 1;
-  color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
 .shadow-\[0_8px_20px_5px_rgba\(0\2c 0\2c 0\2c 0\.08\)\] {
