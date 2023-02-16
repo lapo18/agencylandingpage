@@ -14,15 +14,26 @@
     <title>vet</title>
   </head>
   <body>
-    <header>
-      <nav
-        class="flex justify-between px-4 py-6 bg-white shadow-[0_8px_20px_5px_rgba(0,0,0,0.08)] sm:px-5 lg:px-8"
-      >
-        <img src="src/assets/Logo.png" alt="" />
-        <img src="src/assets/Hum-menu.svg" alt="" />
-      </nav>
+    <header class="w-full bg-white fixed z-10">
+      <div class="w-full flex justify-between items-center px-4 py-6 shadow-[0_8px_20px_5px_rgba(0,0,0,0.08)] sm:px-5 lg:px-8 lg:py-3 xl:py-2 2xl:px-[150px] flex-wrap">
+        <img class="max-w-[83px] sm:max-w-[127px] " src="src/assets/Logo.png" alt="" />
+        <img id="menu-icon" class="lg:hidden" src="src/assets/Hum-menu.svg" alt="" />
+        <nav id="menu"
+          class="hidden basis-full grow bg-white mt-16 lg:mt-0 lg:grow-0 lg:basis-auto lg:relative lg:block"
+        >
+          <ul class="flex flex-col lg:flex lg:flex-row gap-[60px] items-center">
+            <li><a class="uppercase" href="">Home</a></li>
+            <li><a class="uppercase" href="">About</a></li>
+            <li><a class="uppercase" href="">Services</a></li>
+            <li><a class="uppercase" href="">Our work</a></li>
+            <li class="bg-secondary px-10 py-6"><a class="uppercase text-white" href="">Contact us</a></li>
+          </ul>
+          
+        </nav>
+      </div>
+  
     </header>
-    <div class="px-4 sm:px-5 lg:px-8 2xl:px-[150px] overflow-hidden">
+    <div class="pt-[79px] px-4 sm:px-5 lg:px-8 2xl:px-[150px] overflow-hidden">
       <main
         class="flex flex-col items-center justify-center py-[60px] gap-[60px] sm:py-[100px] lg:flex-row lg:justify-between xl:py-[200px] 2xl:py-[300px]"
       >
@@ -41,7 +52,7 @@
           </a>
         </div>
         <div
-          class="bg-tertiary w-60 h-52 rounded-[200px] sm:w-[419px] sm:h-[360px]"
+          class="bg-tertiary w-60 h-52 rounded-[200px] sm:w-[419px] sm:h-[360px] xl:w-[592px] xl:h-[508px] "
         ></div>
       </main>
       <div
@@ -84,7 +95,7 @@
           </div>
         </div>
         <div
-          class="bg-tertiary w-60 h-52 rounded-[200px] sm:w-[436px] sm:h-[374px]"
+          class="bg-tertiary w-60 h-52 rounded-[200px] sm:w-[436px] sm:h-[374px] xl:w-[592px] xl:h-[508px] "
         ></div>
       </div>
       <div
@@ -206,7 +217,7 @@
           </a>
         </div>
         <div
-          class="bg-tertiary w-60 h-52 rounded-[200px] sm:w-[444px] sm:h-[382px]"
+          class="bg-tertiary w-60 h-52 rounded-[200px] sm:w-[444px] sm:h-[382px] xl:w-[619px] xl:h-[532px] "
         ></div>
       </div>
       <div
@@ -231,7 +242,7 @@
               </div>
             </div>
             <div
-              class="flex-1 flex flex-col items-center gap-[60px] py-[71px] border border-[#b8b8b8] rounded-[50px]"
+              class="flex-1 flex flex-col items-center gap-[60px] py-[71px] border border-[#b8b8b8] rounded-[50px] hover:scale-y-110"
             >
               <div class="w-[200px] h-[200px] bg-tertiary rounded-full"></div>
               <div class="text-center">
@@ -366,9 +377,9 @@
         </div>
       </div>
       <div
-        class="flex flex-col gap-[100px] py-20 sm:py-[100px] sm:items-center lg:flex-row lg:gap-14 lg:justify-between"
+        class="flex flex-col gap-[100px] py-20 sm:py-[100px] items-center lg:flex-row lg:gap-14 lg:justify-between"
       >
-        <div class="w-[292px] h-[250px] sm:w-[504px] sm:h-[432px] bg-tertiary rounded-[1000px]"></div>
+        <div class="w-[292px] h-[250px] sm:w-[504px] sm:h-[432px] bg-tertiary rounded-[1000px] lg:w-[504px] lg:h-[432px] xl:w-[592px] xl:h-[508px] "></div>
         <div class="flex flex-col gap-20 items-center justify-center sm:px-[100px] lg:px-0">
           <h2
             class="font-bold text-[40px] leading-[52px] text-center sm:text-[54px] sm:leading-[62px] lg:text-[54px] lg:leading-[72px] lg:text-start"
@@ -411,7 +422,7 @@
         </div>
       </div>
       <div class="flex flex-col items-center gap-[100px] py-20 sm:py-[100px] lg:flex-row lg:justify-between">
-        <div class="w-[292px] h-[286px] sm:w-[458px] sm:h-[452px] bg-tertiary rounded-[1000px] lg:order-2"></div>
+        <div class="w-[292px] h-[286px] sm:w-[458px] sm:h-[452px] bg-tertiary rounded-[1000px] lg:order-2 xl:w-[625px] xl:h-[536px] "></div>
         <div class="flex flex-col gap-[100px] items-center justify-center mx-[60px]">
           <h2
             class="font-bold text-[40px] leading-[52px] text-center sm:text-[54px] sm:leading-[72px]"
@@ -448,7 +459,7 @@
       </div>
       <footer class="relative">
         <img
-          class="absolute -top-7 left-1/2 max-w-[609px] -z-10 -ml-[305px]"
+          class="absolute -top-7 left-1/2 max-w-[609px] -z-10 -ml-[305px] xl:left-0"
           src="src/assets/Illustration.png"
           alt=""
           srcset=""
@@ -506,20 +517,21 @@
             <p class="text-sm text-white text-center">
               Copyright ©2020 Zebb Agency. All Right Reserved
             </p>
-            <div class="flex gap-[60px] text-sm text-white">
+            <div class="flex gap-[60px] text-sm text-white justify-center">
               <p>Cookie Policy</p>
               <p>Privacy Policy</p>
             </div>
           </div>
         </div>
         <img
-          class="absolute bottom-10 left-1/2 max-w-[609px] -z-10 -ml-[305px]"
+          class="absolute bottom-10 right-1/2 max-w-[609px] -z-10 -mr-[305px] xl:right-0"
           src="src/assets/Illustration.png"
           alt=""
           srcset=""
         />
       </footer>
     </div>
+    <script src="dist/main.js"></script>
     <script
       src="https://kit.fontawesome.com/6bebea8fbc.js"
       crossorigin="anonymous"
